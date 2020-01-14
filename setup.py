@@ -1,11 +1,14 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name='dynata-demandapi-client',
     version="1.0.2",
     license="MIT",
     description="A Python client library for the Dynata Demand API",
-    long_description="A Python client library for the Dynata Demand API",
+    long_description=long_description,
     author="Ridley Larsen",
     author_email="Ridley.Larsen@Dynata.com",
     url="https://github.com/dynata/python-demandapi-client",
